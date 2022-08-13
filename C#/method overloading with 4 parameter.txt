@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Student_with_mehod_overloading
+{
+    class Student
+    {
+        int rn;
+        string name, course;
+        int fees;
+
+        public void getdata()
+        {
+            rn = 9;
+            name = "khushi";
+            course = "python";
+            fees = 10000;
+        }
+        // method overloaded
+        public void getdata(int rn, string name)
+        {
+            this.rn = rn;
+            this.name = name;
+        }
+        public void getdata(int rn, string name, string course)
+        {
+            this.rn = rn;
+            this.name = name;
+            this.course = course;
+        }
+        public void getdata(int rn, string name, string course, int fees)
+        {
+            this.rn = rn;
+            this.name = name;
+            this.course = course;
+            this.fees = fees;
+        }
+        public void display()
+        {
+            Console.WriteLine("student roll no = " + rn);
+            Console.WriteLine("student name = " + name);
+            Console.WriteLine("course= " + course);
+            Console.WriteLine("fees= " + fees);
+
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+            s.getdata();
+            s.display();
+
+            Console.WriteLine("------------------------");
+
+
+            Console.WriteLine("------------------------");
+            Console.WriteLine("student  details");
+            Student s2 = new Student();
+            s2.getdata(121, "ayra");
+            s2.display();
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Student  details");
+            Student s3 = new Student();
+            s3.getdata(121, "ayra", "java");
+            s3.display();
+            Console.WriteLine("------------------------");
+            Console.WriteLine("student  details");
+            Student s4 = new Student();
+            s4.getdata(121, "ayra", "java", 5000);
+            s4.display();
+
+
+
+            Console.ReadLine();
+
+        }
+    }
+}
