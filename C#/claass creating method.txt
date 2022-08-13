@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace class_creating_method
+{class Empoyee
+    {
+        int empno;
+        string name;
+        int salary;
+        public void getdata(int a,string s,int i)
+        {
+            empno = a;
+            name = s;
+            salary = i;
+        }
+        public void showdata()
+        {
+            Console.WriteLine(" emp number"+empno);
+            Console.WriteLine("emp name"+name);
+            Console.WriteLine(" emp salary"+salary);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Empoyee emp = new Empoyee();
+            Console.WriteLine("enter emp number");
+            int en=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter name");
+            string enn=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter salary");
+            int sa=Convert.ToInt32(Console.ReadLine());
+            emp.getdata(en,enn,sa);
+            emp.showdata();
+
+        }
+    }
+}
