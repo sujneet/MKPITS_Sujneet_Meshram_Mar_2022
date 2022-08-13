@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace method_overloading
+{
+    //create class book having member variables id,title author,price
+    class Book
+    {
+        int id, price;
+        string title, author;
+        public void getdata()
+        {
+            id = 1;
+            title = "ghkjbgdf";
+            author = "fjkhg";
+            price = 5434;
+
+
+        }//method overloaded
+        public void getdata(int id,string title,string author,int price)
+        {
+            this.id = id;
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+        public void display()
+        {
+            Console.WriteLine("id= "+id);
+            Console.WriteLine("title= " + title);
+            Console.WriteLine("author = " + author);
+            Console.WriteLine("price = " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book = new Book();
+            book.getdata();
+            book.display();
+            Console.WriteLine("-----book 1 detail------");
+            Book book1 = new Book();
+            book1.getdata(34345,"dfjig","dfhj",455);
+            book1.display();
+
+            Console.WriteLine("book 1 detail");
+            Console.WriteLine("enter id");
+            int i=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter title");
+            string s = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter author name");
+            string q = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter price");
+            int p = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter book 2 detail");
+            Book book2 = new Book();
+            book2.getdata(i,s,q,p);
+            book2.display();
+            Console.ReadLine();
+            
+        }
+    }
+}
