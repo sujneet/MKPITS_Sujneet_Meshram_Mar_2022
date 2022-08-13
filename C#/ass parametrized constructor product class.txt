@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parametrized_class_constructor_example
+{
+    class Product
+    {
+        int quantity, price;
+        string name;
+        // no parameter
+        public Product()
+        {
+            name = "sujneet";
+            price = 3234;
+            quantity = 5;
+        }
+        // with parameter
+        public Product(string name,int price,int quantity)
+        {
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+        }
+        public void display()
+        {
+           
+            Console.WriteLine("name= " + name);
+            Console.WriteLine("price= "+price);
+            Console.WriteLine("quantity= "+quantity);
+          
+
+        }
+
+
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Product p = new Product();
+            p.display();
+            Product p2 = new Product("dsfgklj",456565,44);
+            p2.display();
+        }
+    }
+}
+
