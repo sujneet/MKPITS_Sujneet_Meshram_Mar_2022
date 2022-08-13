@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace while_prime_number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,n,j=0;
+            Console.WriteLine("enter number");
+            n=Convert.ToInt32(Console.ReadLine());
+            i = 2;
+            while(i<=n/2)
+            {
+                if (n%i == 0)
+                {
+                    j = 1;
+                    break;
+                }
+                i++;
+            }
+            if (j == 0)
+                Console.WriteLine("it is prime number");
+            else
+            {
+                Console.WriteLine("it is nor prime number");
+            }
+                
+        }
+    }
+}
