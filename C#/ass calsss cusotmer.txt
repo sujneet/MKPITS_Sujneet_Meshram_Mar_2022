@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Customer
+{
+    class Customer
+    {
+        public int custno;
+        public string custname;
+        public string custadd;
+        public long custtel;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //creating an object(instance) of customer class
+            //syntax classname objectname =new classname();
+
+            Customer cust = new Customer();
+
+            cust.custno = 111;
+            cust.custname = "sujneet";
+            cust.custadd = "nagpur";
+            cust.custtel = 489569589;
+
+            Console.WriteLine("custmerno=" + cust.custno);
+            Console.WriteLine("custmername=" + cust.custname);
+            Console.WriteLine("custmerno=" + cust.custadd);
+            Console.WriteLine("custmerno=" + cust.custtel);
+            Console.ReadLine();
+
+
+        }
+    }
+}
