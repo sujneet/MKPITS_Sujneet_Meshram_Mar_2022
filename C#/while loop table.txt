@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace while_print_table
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a,res;
+            int i = 1;
+            Console.WriteLine("enter table you want");
+                a=Convert.ToInt32(Console.ReadLine());
+            while(i<11)
+            {
+                res = i * a;
+                Console.WriteLine("{0}*{1}={2}",a,i,res);
+                i++;
+            }
+
+
+        }
+    }
+}
