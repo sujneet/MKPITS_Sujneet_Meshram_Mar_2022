@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parameter_with_return_type_sq_of_number
+{
+    internal class Program
+    {
+        static int square(int num)
+        {
+            int sq=num*num;
+            return sq;
+
+        }
+        static void Main(string[] args)
+        {
+            int num = 5;
+            int res=square(num);
+            Console.WriteLine(res);
+        }
+    }
+}
