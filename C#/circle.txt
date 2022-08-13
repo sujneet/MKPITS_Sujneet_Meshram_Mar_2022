@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace area_of_circle
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int r;
+            Console.WriteLine("enter radius");
+            r=Convert.ToInt32(Console.ReadLine());
+            float area = 3.14f * r * r;
+            Console.WriteLine("area of circle is " + area);
+            float circ = 2 * 3.14f * r;
+            Console.WriteLine("circumference of circle is" +circ);
+        }
+    }
+}
