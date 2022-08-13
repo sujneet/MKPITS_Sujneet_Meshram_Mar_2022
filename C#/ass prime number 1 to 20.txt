@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace while_print_prime_number_1_to_20
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a=1,i,j;
+            while(a<=20)
+            {
+                j = 0;
+                i = 2;
+                while(i<=a/2)
+                {
+                    if(a%i==0)
+                    {
+                        j++;
+                        break;
+                    }
+                    i++;
+                }
+                if(j==0&&a!=1)
+                {
+                    Console.WriteLine(a);
+                }
+                a++;
+            }
+        }
+    }
+}
