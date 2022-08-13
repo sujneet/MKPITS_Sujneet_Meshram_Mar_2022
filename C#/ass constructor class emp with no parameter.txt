@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructor_class_emp_with_no_parameter_display_method
+{
+    internal class Program
+    {
+        class Employee
+        {
+            int empno, salary;
+            string name, designation;
+            public Employee()
+            {
+                empno = 1;
+                salary = 1;
+                name = "sujneet";
+                designation = "clerk";
+            }
+            public void display()
+            {
+                Console.WriteLine("emp number= " + empno);
+                Console.WriteLine("emp salary= " + salary);
+                Console.WriteLine("emp name= " + name);
+                Console.WriteLine("emp designation= " + designation);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.display();
+            Console.ReadLine();
+        }
+    }
+}
