@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace do_while_print_table
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, i = 1;
+            Console.WriteLine("enter number you want table");
+            num=Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.WriteLine(num * i);
+                i++;
+            } while (i < 11);
+        }
+    }
+}
