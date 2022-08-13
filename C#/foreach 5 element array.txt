@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace foreach_5_element_array
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] num = new string[3];
+            num[0] = "amit";
+            num[1] = "sujneet";
+            num[2] = "mayur";
+            //using foreach loop to iteratew over the element of array
+            foreach(string i in num)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
