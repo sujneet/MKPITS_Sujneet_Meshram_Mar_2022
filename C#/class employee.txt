@@ -1,0 +1,33 @@
+// create a class employee having fields empno,empnameand salary
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace class_of_employee
+{
+    class Employee
+    {
+        public int id;
+        public string name;
+        public int salary;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           // creating an object(instance) of employee(class)
+           // syntax: classname objectname = new classnamew();
+           Employee emp = new Employee();
+            emp.id = 123;
+            emp.name = "sujneet";
+            emp.salary = 15000;
+            Console.WriteLine("employee id "+emp.id);
+            Console.WriteLine("employee name " + emp.name);
+            Console.WriteLine("employee salary " + emp.salary);
+
+        }
+    }
+}
