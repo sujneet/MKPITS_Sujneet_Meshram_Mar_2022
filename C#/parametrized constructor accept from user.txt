@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parametrized_constructor_accepting_value_from_user
+{
+    class Book
+    {
+        int id, price;
+        string name,author;
+        // creating parametrized constructor with 4 parameter
+        public Book(int id,string name,string author,int price)
+        {
+            this.id = id;
+            this.name = name;
+            this.author = author;
+            this.price = price;
+        }
+        public void display()
+        {
+            Console.WriteLine("book id = "+id);
+            Console.WriteLine("book name= "+name);
+            Console.WriteLine("book author = "+author);
+            Console.WriteLine("book price= " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter book id");
+            int id1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter book name");
+            string name1=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter author name");
+            string author1=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter book price");
+            int price1=Convert.ToInt32(Console.ReadLine());
+
+            Book b2=new Book(id1,name1,author1,price1);// this will be call parametrized constructor
+            b2.display();
+        }
+    }
+}
