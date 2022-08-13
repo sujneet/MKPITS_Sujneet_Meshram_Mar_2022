@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace empname_designation_using_switch
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name, designation;
+            int bonus=0;
+            Console.WriteLine("enter employee name");
+            name=Console.ReadLine();
+            Console.WriteLine("enter designation");
+            designation=Console.ReadLine();
+            switch(designation)
+            {
+                case "manager":
+                    bonus = 10000;
+                    break;
+                case "clerk":
+                    bonus = 5000;
+                    break ;
+                case "peon":
+                    bonus = 1000;
+                    break ;
+                    default:
+                    Console.WriteLine("invalid designation");
+                    break ;
+            }
+            Console.WriteLine("name={0},bonus={1}",name,bonus);
+        }
+    }
+}
