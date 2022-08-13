@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_vowel_using_if
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char symbol;
+            Console.WriteLine("enter vowel");
+            symbol=Convert.ToChar(Console.ReadLine());
+            if ((symbol == 'a') || (symbol == 'e') || (symbol == 'i') || (symbol == 'o') || (symbol == 'u'))
+                Console.WriteLine("it is an vowel");
+            else if ((symbol == 'A') || (symbol == 'E') || (symbol == 'I') || (symbol == 'O') || (symbol == 'U'))
+                Console.WriteLine("it is an vowel");
+            else
+                Console.WriteLine("it is not vowel");
+        }
+    }
+}
