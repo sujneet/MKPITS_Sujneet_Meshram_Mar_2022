@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace do_while_wap_1_to_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 1;
+            do
+            {
+                Console.WriteLine(n);
+                n++;
+            } while (n < 11);
+        }
+    }
+}
