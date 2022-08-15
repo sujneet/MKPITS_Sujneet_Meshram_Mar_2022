@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f10__student_marks
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int roll, total, p, c, ca, div;
+            float per;
+            string name;
+            Console.WriteLine("enter name");
+            name=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter roll number");
+            roll=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter physics marks");
+            p=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter chemistry marks");
+            c=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter computer app marks");
+            ca=Convert.ToInt32(Console.ReadLine());
+            total = p + c + ca;
+            Console.WriteLine("total= "+total);
+            per = total / 300f * 100f;
+            Console.WriteLine("percentage = "+per);
+            if (per >= 45 && per <= 55)
+            {
+                Console.WriteLine("third division");
+            }
+            else if(per >= 55&& per <= 65)
+            {
+                Console.WriteLine("second division");
+            }
+            else if (per > 64)
+            {
+                Console.WriteLine("first division");
+            }
+            else
+            {
+                Console.WriteLine("fail");
+            }
+        }
+    }
+}
