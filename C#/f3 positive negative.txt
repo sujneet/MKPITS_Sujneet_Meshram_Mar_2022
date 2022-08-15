@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f3_positive_negative
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("enter integer");
+            a=Convert.ToInt32(Console.ReadLine());
+            if (a > 0)
+            {
+                Console.WriteLine("entered number is positive");
+            }
+            else
+            {
+                Console.WriteLine("entered number is negative");
+            }
+        }
+    }
+}
