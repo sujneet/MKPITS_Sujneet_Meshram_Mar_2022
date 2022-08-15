@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f14_triangle_nature
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            Console.Write("Input side 1 of triangle: ");
+           a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input side 2 of triangle: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input side 3 of triangle: ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+
+
+            if (sidea == b && b == c)
+            {
+                Console.Write("This is an equilateral triangle.\n");
+            }
+            else if (a == b || a == c || b == c)
+            {
+                Console.Write("This is an isosceles triangle.\n");
+            }
+            else
+            {
+                Console.Write("This is a scalene triangle.\n");
+            }
+        }
+    }
+}
+    
+
