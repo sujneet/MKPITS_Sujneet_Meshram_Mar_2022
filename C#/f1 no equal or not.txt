@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f1_equal_or_not
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1, n2;
+            Console.WriteLine("enter 1st number");
+            n1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter 2nd number");
+            n2=Convert.ToInt32(Console.ReadLine());
+            if (n1 == n2)
+            {
+                Console.WriteLine("both are equal");
+            }
+            else
+            {
+                Console.WriteLine("wrong input");
+            }
+        }
+    }
+}
+
