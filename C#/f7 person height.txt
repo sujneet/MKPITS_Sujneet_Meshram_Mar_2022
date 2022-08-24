@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f7_person_height
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            float a;
+            Console.WriteLine("enter persont height in centimeter");
+            a=Convert.ToSingle(Console.ReadLine());
+            if (a < 150)
+            {
+                Console.WriteLine("person is short");
+            }
+            else if(a>150)
+            {
+                Console.WriteLine("person is heighted");
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_even_odd
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.WriteLine("enter number");
+            i=Convert.ToInt32(Console.ReadLine());
+            if (i % 2 == 0)
+                Console.WriteLine("it is prime number");
+            else
+                Console.WriteLine("it is not prime number");
+        }
+    }
+}

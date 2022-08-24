@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace student_marks_grade_perent
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int s1, s2, s3, total;
+            float per;
+            string grade;
+            Console.WriteLine("enter subject 1 marks");
+            s1=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter subject 2nd marks");
+            s2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter subject 3rd marks");
+            s3 = Convert.ToInt32(Console.ReadLine());
+            total = s1 + s2 + s3;
+            per = total / 300f * 100f;
+            Console.WriteLine("total= "+total);
+            Console.WriteLine("percentage= "+per);
+            if (per >= 75)
+                grade = "distiction";
+            else if (per >= 60 && per < 75)
+                grade = "first";
+            else
+                grade = "fail";
+            Console.WriteLine("grade= "+grade);
+
+
+        }
+    }
+}

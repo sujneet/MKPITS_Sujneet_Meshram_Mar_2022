@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace class_pass_data_to_class_method
+{
+    class Employee
+    {
+        public int empid;
+        public string empname;
+        public int salary;
+
+        // creating methods getdata and shoedata
+
+        public void getdata(int e1,string s1, int sa)
+        {
+            empid = e1;
+            empname = s1;
+            salary = sa;
+        }
+        public void showdata()
+        {
+            Console.WriteLine("emp id " + empid);
+            Console.WriteLine("emp name "+empname);
+            Console.WriteLine("emp salary "+salary);
+        }
+    }
+        
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.getdata(11, "sujneet", 5000);
+            emp.showdata();
+        }
+    }
+}

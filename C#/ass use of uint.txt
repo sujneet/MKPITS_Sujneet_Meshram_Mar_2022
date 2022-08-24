@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace using_uint
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            uint b1;
+            Console.WriteLine("enter uint");
+            b1=Convert.ToUInt16(Console.ReadLine());
+            Console.WriteLine("uint entered " + b1);
+            Console.ReadLine();
+        }
+    }
+}

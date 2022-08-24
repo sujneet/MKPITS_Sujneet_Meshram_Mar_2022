@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f9_quadrant_coordinates
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            Console.WriteLine("enter x co-ordinate");
+            x=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter y co-ordinate");
+            y=Convert.ToInt32(Console.ReadLine());
+            if(x > 0 && y > 0)
+            {
+                Console.WriteLine("the co ordinates point lies between 1st quadrant");
+            }
+            else if (x > 0 && y < 0)
+            {
+                Console.WriteLine("the co ordinates point lies between 2nd quadrant");
+            }
+            if (x < 0 && y < 0)
+            {
+                Console.WriteLine("the co ordinates point lies between 3rd quadrant");
+            }
+            if (x < 0 && y > 0)
+            {
+                Console.WriteLine("the co ordinates point lies between 4th quadrant");
+            }
+
+        }
+    }
+}

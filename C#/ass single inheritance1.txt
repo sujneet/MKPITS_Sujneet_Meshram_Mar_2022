@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritance_AQ2.person
+{
+    internal class Program
+    {
+        public class Person
+        {
+            String name;
+            String address;
+            public void getpersondata(String name, String address)
+            {
+                this.name = name;
+                this.address = address;
+            }
+            public void displaypersondata()
+            {
+                Console.WriteLine("name : " + name);
+                Console.WriteLine("address : " + address);
+
+            }
+        }
+
+        public class Employee : Person
+        {
+            int empno;
+            int salary;
+
+            public void getdataemp(int empno, int salary)
+            {
+                this.empno = empno;
+                this.salary = salary;
+            }
+            public void displayempdata()
+            {
+                Console.WriteLine("Emp no:" + empno);
+                Console.WriteLine("Salary:" + salary);
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.getpersondata("Amit", "Nagpur");
+            emp.getdataemp(4, 50000);
+            emp.displaypersondata();
+            emp.displayempdata();
+
+            Console.ReadLine();
+        }
+    }
+}

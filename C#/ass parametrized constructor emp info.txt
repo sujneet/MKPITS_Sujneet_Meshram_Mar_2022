@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parametrized_constructor_example
+{
+    class Employee
+    {
+        int empno, salary;
+        string name, designation;
+        // no parameter
+        public Employee()
+        {
+            empno = 1;
+            salary = 1;
+            name = "sujneet";
+            designation = "clerk";
+        }
+        // with parameter
+        public Employee(int empno, int salary, string name, string designation)
+        {
+            this.empno = empno;
+            this.salary = salary;
+            this.name = name;
+            this.designation = designation;
+        }
+        public void display()
+        {
+            Console.WriteLine("emp no =" + empno);
+            Console.WriteLine("salary" + salary);
+            Console.WriteLine("name= "+name);
+            Console.WriteLine("designation= "+designation);
+                
+        }
+
+        
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.display();//no parameter
+            Console.WriteLine("employee detail");
+            Employee emp2 = new Employee(11,345,"fghghgf","fghghj");//with parameter
+            emp2.display();
+        }
+    }
+}

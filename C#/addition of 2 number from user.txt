@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace addition_of_2_number_from_user
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            Console.WriteLine("enter 1st numner");
+            num1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter 2nd number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            int res=num1 + num2;
+            Console.WriteLine("addition of two number is "+ res);
+        }
+    }
+}

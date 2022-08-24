@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_hra_and_da_of_employee
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int empid, salary;
+            float hra, da, total;
+            string name;
+            Console.WriteLine("enter employee id");
+            empid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter emp name");
+            name = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("enter employee sllary");
+            salary = Convert.ToInt32(Console.ReadLine());
+            hra = salary * 0.32f;
+            da = salary * 0.45f;
+            total = salary + hra + da;
+            Console.WriteLine("employee name " + name);
+            Console.WriteLine("employee id " + empid);
+            Console.WriteLine("employee hra " + hra);
+            Console.WriteLine("employee da " + da);
+            Console.WriteLine("total salary " + total);
+            Console.ReadLine();
+        }
+    }
+}

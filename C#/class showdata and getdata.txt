@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace class_showdata_and_getdata
+{
+    class Employee
+    {
+        int empid;
+        string empname;
+        int empsalary;
+
+        public void getdata()
+        {
+            Console.WriteLine("enter emp id");
+            empid = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter emp name");
+            empname = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter emp salary");
+            empsalary = Convert.ToInt32(Console.ReadLine());
+        }
+        public void showdata()
+        {
+            Console.WriteLine("emp id " + empid);
+            Console.WriteLine("emp name" + empname);
+            Console.WriteLine("emp salary" + empsalary);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.getdata();
+            emp.showdata();
+        }
+    }
+}

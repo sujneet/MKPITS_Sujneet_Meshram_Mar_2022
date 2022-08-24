@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace f18_bill_amount
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int id, unit;
+            float chg;
+            float echg;
+            string name;
+            Console.WriteLine("enter customer id");
+            id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter customer name");
+            name=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter unit consumed by user");
+            unit = Convert.ToInt32(Console.ReadLine());
+            echg = Convert.ToInt32(Console.ReadLine());
+            if (unit < 200)
+            {
+                chg = unit * 1.20f;
+                chg = echg;
+            }
+            else if(unit>=200&&unit<400)
+            {
+                chg = unit * 1.50f;
+                chg=echg;
+            }
+            else if (unit >= 400 && unit < 600)
+            {
+                chg = unit * 1.80f;
+                echg = chg * 15 / 100f;
+            }
+            else if(unit>=600)
+            {
+                chg = unit * 2.00f;
+                echg = chg * 15 / 100f;
+            }
+            Console.WriteLine("customer id=" + id);
+            Console.WriteLine("customer name= "+name);
+            Console.WriteLine("unit consumed by user= "+unit);
+            Console.WriteLine("total payable amount= "+echg);
+        }
+    }
+}

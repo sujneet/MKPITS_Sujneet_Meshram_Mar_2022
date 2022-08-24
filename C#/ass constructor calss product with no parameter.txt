@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructor_class_product_with_no_parameter_and_display_method
+{
+    // create class product having fields productid,productname,price,quantity 
+    //create a constructor with no parameter and method idsplay
+    class Product
+    {
+        int id,price,quantity;
+        string name;
+        public Product()
+        {
+            id = 1;
+            price = 143;
+            name = "sgdf";
+            quantity = 22;
+        }
+        public void display()
+        {
+            Console.WriteLine("product id = "+id);
+            Console.WriteLine("product price = " + price);
+            Console.WriteLine("product name = " + name);
+            Console.WriteLine("product quantiy = " + quantity);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Product product = new Product();
+            product.display();
+            Console.ReadLine();
+        }
+    }
+}

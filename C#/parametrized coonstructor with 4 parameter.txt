@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parametrized_constructor_taking_more_parameters
+{
+    class Book
+    {
+        int bookid, price;
+        string title, author;
+
+        // creating constructor with no parameter
+
+
+        public Book()
+        {
+            bookid = 0;
+            title = "sujneet";
+            author = "mai";
+            price = 1000;
+        }
+        // constructor with 4 parameter
+        public Book(int bookid,string title,string author,int price)
+        {
+            this.bookid = bookid;
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+        public void display()
+        {
+            Console.WriteLine("book id= "+bookid);
+            Console.WriteLine("title= " + title);
+            Console.WriteLine("author= "+author);
+            Console.WriteLine("price= " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book b = new Book();// this woll call constructor automatically
+            b.display();
+            Console.WriteLine("----------book1 detail---------");
+            Book b1 = new Book(11, "efddr", "dsgf", 32);//it is parametrized
+            b1.display();
+            Console.WriteLine("----book1 detail-----");
+            Console.WriteLine("enter book id");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter title");
+            string t1 = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter author");
+            string au = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter price");
+            int p1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("------book2 detail----------");
+            Book b2 = new Book(id, t1, au, p1);
+            b2.display();
+        }
+    }
+}

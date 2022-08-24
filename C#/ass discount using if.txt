@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_discount_using_if
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            float rate, quantity,amount,discount;
+            Console.WriteLine("enter product name");
+            name=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter rate of product");
+            rate=Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("enter quantity");
+            quantity=Convert.ToInt16(Console.ReadLine());
+            amount = quantity * rate;
+            if (amount < 2000)
+            {
+                discount = amount * 0.5f;
+                amount = amount - discount;
+            }
+            else if (amount > 2000)
+            {
+                discount = amount * 0.1f;
+                amount = amount - discount;
+            }
+            Console.WriteLine("amount=" + amount);
+        }
+    }
+}

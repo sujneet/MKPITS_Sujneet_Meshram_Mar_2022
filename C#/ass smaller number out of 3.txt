@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_display_greater_number_out_of_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            Console.WriteLine("emter 1st number");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("emter 2nd number");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("emter 3rd number");
+            c = Convert.ToInt32(Console.ReadLine());
+            if (a < b && a < c)
+                Console.WriteLine("1st number is smallest");
+            else if (b < a && b < c)
+                Console.WriteLine("2nd number is smallest");
+            else
+                Console.WriteLine("3rd number is smallest");
+        }
+    }
+}

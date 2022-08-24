@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Product_and_Create_Methods
+{
+    class Product
+    {
+        int proid;
+        string proname;
+        float prorate;
+        int proquan;
+
+        public void getproductdata()
+        {
+            Console.WriteLine("enter Product Id");
+            proid = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter Product name");
+            proname = Console.ReadLine();
+            Console.WriteLine("enter Product rate");
+            prorate = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("enter Product quantity");
+            proquan = Convert.ToInt32(Console.ReadLine());
+
+        }
+        public void displayorder()
+        {
+            Console.WriteLine("proid " + proid);
+            Console.WriteLine("proname " + proname);
+            Console.WriteLine("prorate " + prorate);
+            Console.WriteLine("proquan " + proquan);
+
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //creating an object(instance) of Customer class
+            //syntax classname objectname =new classname();
+            Product pro = new Product();
+            pro.getproductdata();
+            pro.displayorder();
+            Console.ReadLine();
+
+        }
+    }
+}

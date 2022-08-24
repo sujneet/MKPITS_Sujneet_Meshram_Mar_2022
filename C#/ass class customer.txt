@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace class_customer
+{
+    //create a class customer having fields custno,custname,custaddress,custtelno
+    class Customer
+    {
+        public int custid;
+        public string name;
+        public string add;
+        public int number;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}

@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parametrized_constructor
+{
+    class Book
+    {
+        int id, price;
+        string name, author;
+        //creating constructor with no parameter 
+        public Book()
+        {
+            Console.WriteLine("constructor with no parameter");
+            id = 1;
+            price = 100;
+            name = "sujneet";
+            author = "sujneet";
+        }
+        //creating a parameter constructor with 4 parameter
+
+        public Book(int id,string name,string author,int price)
+        {
+            Console.WriteLine("constructor with parameter called");
+            this.id = id;
+            this.name = name;
+            this.author = author;
+            this.price = price;
+
+        }
+        public void display()
+        {
+            Console.WriteLine("book id = " + id);
+            Console.WriteLine("book name = " + name);
+            Console.WriteLine("book author = " + author);
+            Console.WriteLine("book price = " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book b1 = new Book(); // this will call constructor with no paramter automatically
+            b1.display();
+
+            Book b2 = new Book(22, "sujneet", "arya baht", 500);
+            b2.display();
+        }
+    }
+}

@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritance_AQ1.Class_person_and_derieved_class_emp
+{
+    internal class Program
+    {
+        public class Person
+        {
+            public String name;
+            public String address;
+
+        }
+        public class Employee : Person
+        {
+            public int empno;
+            public int salary;
+            public string designation;
+        }
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee();
+            emp.name = "Ravi";
+            emp.address = "Nagpur";
+            emp.empno = 4;
+            emp.salary = 400000;
+            emp.designation = "Manager";
+
+            Console.WriteLine("Name:" + emp.name);
+            Console.WriteLine("Address:" + emp.address);
+            Console.WriteLine("Employee No:" + emp.empno);
+            Console.WriteLine("Salary:" + emp.salary);
+            Console.WriteLine("Designation:" + emp.designation);
+
+            Console.ReadLine();
+        }
+    }
+}

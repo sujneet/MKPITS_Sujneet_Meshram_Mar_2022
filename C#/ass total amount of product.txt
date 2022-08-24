@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ass_display_total_amount_of_product
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int quantity,rate, total;
+            string name;
+            Console.WriteLine("enter product name");
+            name=Convert.ToString(Console.ReadLine());
+            Console.WriteLine("enter rate of product");
+            rate=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter quantity of product");
+            quantity=Convert.ToInt32(Console.ReadLine());
+            total = quantity * rate;
+            Console.WriteLine("total rate of product is "+total);
+
+        }
+    }
+}
