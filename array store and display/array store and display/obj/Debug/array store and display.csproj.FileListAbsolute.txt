@@ -1,0 +1,11 @@
+E:\dot net\Windows form\array store and display\array store and display\bin\Debug\array store and display.exe.config
+E:\dot net\Windows form\array store and display\array store and display\bin\Debug\array store and display.exe
+E:\dot net\Windows form\array store and display\array store and display\bin\Debug\array store and display.pdb
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.csproj.AssemblyReference.cache
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.csproj.SuggestedBindingRedirects.cache
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array_store_and_display.Form1.resources
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array_store_and_display.Properties.Resources.resources
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.csproj.GenerateResource.cache
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.csproj.CoreCompileInputs.cache
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.exe
+E:\dot net\Windows form\array store and display\array store and display\obj\Debug\array store and display.pdb
