@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            var num=document.getElementById("n").value;
+            var i,fact=1;
+            for(i=1;i<=num;i++)
+            {
+                fact=fact*i;
+            }
+            document.getElementById("res").innerText=fact;
+        }
+    </script>
+</head>
+<body>
+    Enter the number: <input type="text" id="n"/><br><br>
+    <input type="button" value="Result" onclick="display();" /><br><br>
+    Factorial:&nbsp;<span id="res"></span>
+</body>
+</html>
