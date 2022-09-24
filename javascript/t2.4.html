@@ -1,0 +1,40 @@
+<html>
+    <script>
+        function fun1()
+{
+	var p1=parseFloat(prompt("enter age of 1st person"));
+    var p2=parseFloat(prompt("enter age of 2nd person"));
+    var p3=parseFloat(prompt("enter age of 3rd person"));
+	
+	if(p1>p2 && p1>p3)
+	{
+		return 0;
+	}
+	else
+	if(p2>p3 && p2>p1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 2;
+	}
+}
+
+
+	var s=fun1();
+	if(s==0)
+	{
+		document.write("1st Person is greater ");
+	}
+	if(s==1)
+	{
+		document.write("2nd Person is greater ");
+	}
+	if(s==2)
+	{
+		document.write("3rd Person is greater ");
+	}
+
+    </script>
+</html>
