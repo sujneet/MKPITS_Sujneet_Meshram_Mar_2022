@@ -1,0 +1,28 @@
+<html>
+<head>
+<h1>YOUR AGE</h1>
+<script>
+function age()
+{
+    var age;
+    age=(document.getElementById(t1).value);
+    if(age<=0 && age>=18)
+    {
+        alert("i am teen")
+    }
+    else if(age<=18 && age>=60)
+    {
+        alert("i am adult");
+    }
+    else{
+        alert("i am old")
+    }
+    
+}
+</script>
+</head>
+<body>
+    enter age: <input id="t1">
+    <input type="submit" onclick="age()"/>
+</body>
+</html>
