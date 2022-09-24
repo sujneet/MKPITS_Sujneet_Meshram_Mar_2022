@@ -1,0 +1,34 @@
+<!-- program to accept length , breadth, hieght and then display volume -->
+<html>
+<head>
+	<script>
+	//creating a function display with 2 parameters to accept to 2 numbers
+	function display()
+	{
+	var l= parseInt(document.getElementById("t1").value);
+	var b= parseInt(document.getElementById("t2").value);
+	var h= parseInt(document.getElementById("t2").value);
+	var result=l * b * h;
+	//alert("addition of 2 number " + result);
+	var r=document.getElementById("res");
+	r.innerText=result;
+	
+	}
+	</script>
+</head>
+
+<body>
+<h1 align=center > mkpits solutions </h1>
+
+<br>
+<form>
+enter length : <input type =text name="t1" id="t1" /> <br><br>
+enter breadth : <input type =text name="t2" id="t2" /> <br><br>
+enter height : <input type =text name="t2" id="t2" /> <br><br>
+<input type=button value="call display function" onclick="display();" />
+<br><br>
+volume : <span id="res" > </span>
+</form>
+
+</body>
+</html>
