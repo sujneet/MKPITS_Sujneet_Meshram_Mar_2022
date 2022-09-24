@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function display()
+            {
+                var desig=document.getElementById("designation").value;
+                // alert(des);
+                var employ_name=document.getElementById("name").value;
+                var salary=parseInt(document.getElementById("sal").value);
+                var total_salary1=salary+5000;
+                var total_salary2=salary+2000;
+                var total_salary3=salary+1000;
+
+                if(desig=="manager")
+                {
+                    document.getElementById("res").innerHTML=employ_name;
+                    document.getElementById("res1").innerHTML=total_salary1;
+                    document.getElementById("res2").innerHTML="5000";
+                }
+                else if(desig=="clerk")
+                {
+                    document.getElementById("res").innerHTML=employ_name;
+                    document.getElementById("res1").innerHTML=total_salary2;
+                    document.getElementById("res2").innerHTML="2000";
+                }
+                else  if(desig=="peon")
+                {
+                    document.getElementById("res").innerHTML=employ_name;
+                    document.getElementById("res1").innerHTML=total_salary3;
+                    document.getElementById("res2").innerHTML="1000";
+                }
+                else 
+                {
+                    document.getElementById("other").innerHTML="Something went wrong";
+
+                }
+            }
+</script>
+</head>
+    <body>
+        Enter employee name: <input type="text" id="name"/><br><br>
+        Designation :  &nbsp;
+    <select id="designation">
+        <option>Select</option>   
+        <option value="manager">Manager</option>
+        <option value="clerk">Clerk</option>
+        <option value="peon">Peon</option>
+    </select>
+    <br><br>
+
+        Enter basic salary:  &nbsp;<input type="text" id="sal"/><br><br>
+        <input type="button" value="Print" onclick="display()"/> <br><br>
+        <span style="color:rgb(68, 10, 149)"; id="choose"></span> <br><br>
+        Employee Name:&nbsp;&nbsp;<span id="res" ></span><br><br>
+        Total Salary:&nbsp;&nbsp;<span id="res1" ></span><br><br>
+        Bonus:&nbsp;&nbsp;<span id="res2" ></span>
+    </body>
+</html>
