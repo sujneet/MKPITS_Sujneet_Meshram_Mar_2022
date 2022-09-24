@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<span id="res"></span>
+    <script>
+        var i,j;
+     for(i=1;i<=100;i++)
+     {
+        var fact=0;
+     for(j=1;j<=i;j++)
+     {
+         if(i%j==0)
+         {
+             fact=fact+1;
+         }
+     } 
+
+     if(fact==2)
+     {
+
+         document.getElementById("res").innerHTML+=i+ "<br>";
+     }
+
+     }
+</script>
+</body>
+</html>

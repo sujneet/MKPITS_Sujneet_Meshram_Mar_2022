@@ -1,0 +1,21 @@
+<script>  
+    var add=new Function("num1","num2","return num1+num2");
+	
+    </script>
+	
+	<script >
+	function disp(n1,n2)
+	{
+	var num1=parseInt(n1);
+	var num2=parseInt(n2);
+	var res=add(num1,num2);
+	alert("result " + res);
+	}
+	
+	</script>
+	
+	<form name="f1">
+	enter n1 <input type=text name="t1"  /><br>
+	enter n2 <input type=text name="t2"  /><br>
+	<input type=button onclick="disp(document.f1.t1.value,document.f1.t2.value);" value=ok />
+	</form>

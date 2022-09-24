@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            var char=document.getElementById("char").value;
+            switch(char)
+            {
+                case 'a':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'e':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'i':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'o':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'u':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'A':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'E':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'I':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'O':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                case 'U':
+                document.getElementById("res").innerText="Enter character is Vowel";
+                break;
+                default:
+                document.getElementById("res").innerText="Enter character is not Vowel";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the character: <input type="text" id="char"/><br><br>
+    <input type="button" value="Check" onclick="display();"/><br><br>
+    Result: &nbsp; <span id="res"></span>
+</body>
+</html>

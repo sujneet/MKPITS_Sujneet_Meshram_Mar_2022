@@ -1,0 +1,30 @@
+<html>
+    <script>
+        function fun1()
+        {
+            var n=parseInt(prompt("enter any number"));
+            if(n%3==0)
+            {
+                return 1;
+            }
+            else if(n%7==0)
+            {
+                return 0;
+            }
+        }
+        var m=fun1();
+        if(m==1)
+        {
+            document.write("entered number is multiple of 3");
+        }
+        
+        else if(m==0)
+        {
+            document.write("entered number is multiple of 7");}
+
+        
+           else
+        {
+            document.write("entered number is not multiple of 3 or 7");}
+    </script>
+</html>

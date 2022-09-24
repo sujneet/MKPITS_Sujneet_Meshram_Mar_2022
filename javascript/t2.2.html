@@ -1,0 +1,42 @@
+<html>
+    <script>
+function fun1()
+{
+    var backup=prompt("enter 3 digit number");
+	var num,a,b,c,rev;
+	
+	
+	num=backup;
+	
+	a=num%10;
+	num=parseInt(num/10);
+	b=num%10;
+	num=parseInt(num/10);
+	c=num%10;
+	rev=a*100+b*10+c*1;
+	if(backup==rev)
+	{
+		return 1;
+		
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+    var s=fun1();
+	if(s==1)
+	{
+		document.write("enter number is palindrom");
+		
+	}
+	else
+	{
+		document.write("Enter number is not palindrome");
+	}
+
+</script>
+</html>

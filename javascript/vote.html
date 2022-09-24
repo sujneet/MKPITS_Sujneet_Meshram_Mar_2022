@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+        function display()
+            {
+                var age=document.getElementById("person").value;
+
+                if(age<18)
+                {
+                    document.getElementById("res").innerText="Person is not eligible for vote";
+                }
+
+                else
+                {
+                    document.getElementById("res").innerText="Person is eligible for vote";
+                }
+            }
+</script>
+</head>
+    <body>
+        Enter age of a person:<input type="text" id="person"/><br><br>
+
+        <input type="button" value="Click" onclick="display()"/><br><br>
+        <span id="res"></span>
+
+    </body>
+</html>

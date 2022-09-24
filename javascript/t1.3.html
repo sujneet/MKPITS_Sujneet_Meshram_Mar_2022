@@ -1,0 +1,42 @@
+
+<script>
+function fun1()
+{
+    var n1=parseInt(prompt("enter any number"));
+    
+	
+    var num,r,res=0,n=0;
+	num=n1;
+    while(num!=0)
+    {
+        num=num/10;
+        n++;
+    }
+	num=n1;
+	while (num!=0)
+    {
+        r=num%10;
+        parseInt(c=1);
+        parseInt( i=0);
+        while(i<n)
+        {
+            c=c*r;
+            i=i+1;
+        }
+        res=res+c;
+        num=num/10;
+    }
+	if(res==n1)
+	{
+        document.write("number is armstrong");
+    }
+    else
+    {
+		document.write("Number is not Armstrong");
+    }
+}
+
+{
+	fun1();
+}
+</script>

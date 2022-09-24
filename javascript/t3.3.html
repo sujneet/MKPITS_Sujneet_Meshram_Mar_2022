@@ -1,0 +1,40 @@
+<html>
+    <script>
+        function fun1(backup)
+{
+	var num,a,b,c,rev;
+	
+	num=backup;
+	
+	a=num%10;
+	num=parseInt(num/10);
+	b=num%10;
+	num=parseInt(num/10);
+	c=num%10;
+	rev=a*100+b*10+c*1;
+	if(backup==rev)
+	{
+		return 1;
+		
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+    var z=prompt("enter any number");
+	var s=fun1(z);
+	if(s==1)
+	{
+		document.write("Enter number is palindrome number");
+		
+	}
+	else
+	{
+		document.write("Enter number is not palindrome");
+	}
+	
+
+    </script>
+</html>

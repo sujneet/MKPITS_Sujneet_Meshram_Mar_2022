@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+	function display()
+	{
+	var radius=parseFloat(document.getElementById("radius").value);
+
+    var area=3.14*radius*radius;
+    var circum=2*3.14*radius;
+
+    var r1=document.getElementById("area");
+        r1.innerText=area;
+    var r2=document.getElementById("circum");
+        r2.innerText=circum;
+    }
+	</script>
+</head>
+
+<body align="center" > 
+
+<h1>Area and Circumference of a circle</h1>
+
+    Enter the Radius:&nbsp; <input type="text" id="radius"/><br><br>
+    <input type="button" value="Click" onclick="display()"/><br><br>
+    Area of Circle:<span id="area"></span><br><br>
+    Circumference of Circle:<span id="circum"></span><br><br>
+
+</body>
+</html>

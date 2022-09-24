@@ -1,0 +1,43 @@
+<script>
+
+function fun1()
+{
+	var choice=parseInt(prompt("enter any choice"));
+	var a=parseInt(prompt("enter a"));
+    var b=parseInt(prompt("enter b"));
+	var c;
+	
+	switch(choice)
+	{
+		case 1:
+		
+        c=a+b;
+		document.write("sum is"+c);
+		break;
+		
+		case 2:
+		c=a-b;
+		document.write("substraction is"+c);
+		break;
+		
+		case 3:
+		c=a*b;
+		document.write("multiplication is"+c);
+		break;
+		
+		case 4:
+		c=a/b;
+		document.write("Div is"+c);
+		break;
+		
+		default :
+		printf("I am in default");
+		break;
+	}
+	
+}
+
+{
+	fun1();
+}
+</script>

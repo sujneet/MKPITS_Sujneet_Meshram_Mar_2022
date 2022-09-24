@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+            function display()
+            {
+                var a=document.getElementById("a1").value;
+                var b=document.getElementById("b1").value;
+                var c=document.getElementById("c1").value;
+                if(a>b && a>c)
+                {
+                    document.getElementById("res").innerText="First number is greater";
+                }
+                else  if(b>a && b>c)
+                {
+                    document.getElementById("res").innerText="Second number is greater";
+                }
+                else 
+                {
+                    document.getElementById("res").innerText="Third number is greater";
+                }
+            }
+</script>
+</head>
+    <body>
+        Enter first number:<input type="text" id="a1"/><br><br>
+        Enter second number: <input type="text" id="b1"/><br><br>
+        Enter third number: <input type="text" id="c1"/><br><br>
+        <input type="button" value="Click" onclick="display()"/><br><br>
+        <span id="res"></span>
+
+    </body>
+</html>
+<body>

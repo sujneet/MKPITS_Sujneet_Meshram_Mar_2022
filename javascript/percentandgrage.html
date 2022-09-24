@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+        function display()
+        {
+            var s1=parseInt(document.getElementById("subj1").value);
+            var s2=parseInt(document.getElementById("subj2").value);
+            var s3=parseInt(document.getElementById("subj3").value);
+
+            var total=s1+s2+s3;
+            document.getElementById("to").innerText=total;
+            var percen=(total/300)*100;
+            document.getElementById("per").innerText=percen;
+
+            if(percen>=75)
+            {
+                document.getElementById("grt").innerText="Distinction";
+            }
+            else if(percen>=60 && percen<=75)
+            {
+                document.getElementById("grt").innerText="First Division";
+            }
+            else if(percen>=45 && percen<=60)
+            {
+                document.getElementById("grt").innerText="Second Division";
+            }
+            else
+            {
+                document.getElementById("grt").innerText="Fail";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter subject 1 mark:<input type="text" id="subj1"/><br><br>
+    Enter subject 2 mark:<input type="text" id="subj2"/><br><br>
+    Enter subject 3 mark:<input type="text" id="subj3"/><br><br>
+
+    <input type="button" value="Click" onclick="display()"/><br><br>
+    Total= &nbsp;<span id="to"></span><br><br>
+    Percentage= &nbsp;<span id="per"></span><br><br>
+    Grade= &nbsp;<span id="grt"></span><br><br>
+
+</body>
+</html>

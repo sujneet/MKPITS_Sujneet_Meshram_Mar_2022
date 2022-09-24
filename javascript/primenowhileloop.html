@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            var num=parseInt(document.getElementById("n").value);
+            var i=1,fact=0;
+            while(i<=num)
+            {
+                if(num%i==0)
+                {
+                    fact=fact+1;
+                }
+                i++;
+            }          
+            if(fact==2)
+            {
+                document.getElementById("res").innerHTML="Enter number is prime number";
+            }
+            else
+            {
+                document.getElementById("res").innerHTML="Enter number is not a prime number";   
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset style="width:50%;">
+            <br>
+            Enter any number: <input type="text" id="n"><br><br>
+            <input type="button" value="Check" onclick="display();" />
+            <br><br>
+            <span id="res"></span>
+        </fieldset>
+    </form>
+</body>
+</html>
