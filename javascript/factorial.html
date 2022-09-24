@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            var num=document.getElementById("n").value;
+            var i=num,fact=1;
+            while(i>0)
+            {
+                fact=fact*i;
+                i--;
+            }
+            document.getElementById("res").innerText=fact;
+        }
+    </script>
+</head>
+<body>
+    <h3>Printing factorial of any Number</h3>
+    Enter the number: <input type="text" id="n"/><br><br>
+    <input type="button" value="Print" onclick="display();" /><br><br>
+    Factorial:&nbsp;<span id="res"></span>
+</head>
+<body>
+
+</body>
+</html>
