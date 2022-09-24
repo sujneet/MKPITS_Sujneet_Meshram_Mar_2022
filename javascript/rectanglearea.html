@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+	function display()
+	{
+	var length=parseInt(document.getElementById("length").value);
+	var breadth=parseInt(document.getElementById("breadth").value);
+
+	var area;
+
+    area=length*breadth;
+
+    var r=document.getElementById("area");
+    r.innerText=area;
+	}
+	</script>
+</head>
+
+<body align="center" > 
+
+<h1>Area of Rectangle</h1>
+<form>
+Enter the length:&nbsp;<input type="text" id="length"><br><br>
+Enter the breadth:&nbsp;<input type="text" id="breadth"><br><br>
+
+<input type="button" value="click" onclick="display()"/><br><br>
+Area of Rectangle=<span id="area"></span> 
+</form>
+</body>
+</html> 
