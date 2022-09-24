@@ -1,0 +1,36 @@
+<!-- program to accept radius of a circle and print area and circ of a circle -->
+<html>
+<head>
+	<script>
+	//creating a function display with 2 parameters to accept to 2 numbers
+	function display()
+	{
+	var rad =parseInt(document.getElementById("t1").value);
+	
+	var area = 3.14 * rad * rad;
+	var circ= 2 * 3.14 * rad;
+	//alert("addition of 2 number " + result);
+	var r=document.getElementById("res");
+	var r1=document.getElementById("res1");
+	r.innerText=area;
+	r1.innerText=circ;
+	
+	}
+	</script>
+</head>
+
+<body>
+<h1 align=center > mkpits solutions </h1>
+
+<br>
+<form>
+enter radius of a circle : <input type =text name="t1" id="t1" /> <br><br>
+
+<input type=button value="call display function" onclick="display();" />
+<br><br>
+area of circle : <span id="res" > </span> <br>
+circ of circle : <span id="res1" > </span>
+</form>
+
+</body>
+</html>
